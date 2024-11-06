@@ -1,0 +1,41 @@
+Today's Topics
+Continue with JVM Architecture
+OPPS --encapsulation,data hiding
+(class programming)
+Packages,ClassPath
+
+
+
+Java data types : which of 2 categories
+    |                       |
+primitive             reference types
+(value holding)         (address holding)
+
+
+Types of conversion in primitive data types
+1. Widening (auto conversion/promotion):performed by javac
+eg : byte > int, short > double, long > float
+(small size converted automatically to big byte size by JVM)
+
+2. Narrowing conversion : performed by prog(using type casting)
+eg:double > float , int > byte 
+(It's OK that am losing data on the above conversion)
+
+(Maximum size will be always dominating)
+What will data type of result of
+byte * byte = int
+byte * short = int
+short * short = int
+int * long = long
+long * float = float
+float * double = double
+byte / short / int / float * double  = double
+
+this--keyword in java
+"this" represents => current object reference
+Usages
+1.TO un-hide instance variable from local variable
+eg:this.width = width
+
+2.To invoke constructor of the same class from different constructor.
+eg: this(side,side,side);
