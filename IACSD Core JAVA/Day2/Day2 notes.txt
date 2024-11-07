@@ -39,3 +39,24 @@ eg:this.width = width
 
 2.To invoke constructor of the same class from different constructor.
 eg: this(side,side,side);
+
+***Garbage Collection
+Garbage Collection is a process to identity and delete the object from heap memory which are not in use.
+Garbage Collection frees the space after removing unreferenced object
+
+Garbage = un -referencable object
+
+
+***Triggers for making the object for Garbage Collection(candidate for Garbage Collection)
+1.Nullifying all valid refs/
+eg Box b1 = new Box(1,2,3)
+Box b2 = b1 = null.
+
+2.re-assigning the reference to another object
+eg : Box b1 = new Box(10,20,30);
+b1= new Box(2,3,4);
+
+3.object created within a method and its reference NOT returned to the caller.
+4.Island of isolation
+
+
