@@ -1,0 +1,23 @@
+Regarding Packages
+
+what is Packages?
+Collection of functionally similar classes and interfaces.
+
+Creating user defined Packages
+Need?
+1. To group functionally similar classes together
+2. Avoids name space collision (allows duplicate class names in different packages)
+3. Finer control over access specifiers.
+
+About Packages
+1. Creation: package statement has to placed as the 1st statement in java source.
+eg. package p1; => the classes will be part of package p1.
+
+2.Pakcage names are mapped to folder names.
+eg:package p1:class A{......}
+
+3.For simplicity ---create folder p1 ---under <src> & compiler from</src>
+From <src></src>
+javac -d .\bin p1\A.java
+
+-> javac will auto create the sub-folder <bin> folder and place A class within <bin> 
