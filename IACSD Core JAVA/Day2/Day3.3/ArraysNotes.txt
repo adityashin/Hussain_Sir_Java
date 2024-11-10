@@ -1,0 +1,12 @@
+In java, arrays are full fledged objects.
+Like objects, arrays are dynamically created and stored on the heap.
+
+Arrays(like any other object) are associated with the class.All arrays of the same dimesion and type have the same class. the length of an array does not play any role in establising the array's class.
+for example, an array of three int's <-(datatype) has the same class as an array of three hundred ints.
+[(The length of array is considered part of its instance data.)]
+
+eg.The class name for single dimension array of ints is "[]".The class anem for a three dimesional array of bytes is "[[[B]]]".The class name for single dimesion array of booleans is "[z]".
+
+Array size(length) is fixed.Implicit super class of array is java.lang.object.
+
+ 
