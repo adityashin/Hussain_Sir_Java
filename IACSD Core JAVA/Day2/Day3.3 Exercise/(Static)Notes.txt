@@ -1,0 +1,4 @@
+ One static method can directly call other static method without instancation
+
+In java Everything is Pass by value means the paramters are copied and send to desired method or constructor
+
