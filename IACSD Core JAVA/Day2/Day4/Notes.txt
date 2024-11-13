@@ -1,0 +1,63 @@
+Todays Topics
+
+Revise with memory pics:array of references
+stati   c keyword
+Inheritance
+Polymorphism
+
+Dynamic Init of arrays
+eg: int[] ints={10,20,30,40,50}
+👆First array class gets loaded, then array object gets created in the heap, array is inited.
+
+
+______________________________________________________________
+**************************************************************
+ Implicit : CLR adds some keyword while compiliation.
+
+ Explicit:manually added(code itself written by developer).
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+API --java.util.Arrays : helper class for array handling Method
+public static String toString(double[] a)
+Returns a string representation of the contents of the specified array.
+______________________________________________________________
+**************************************************************
+
+
+static keyword in java
+Usages
+1.Static Data Members  
+----Memory allocated only once @class loading time --not saved on object heap ----but in special memory area([method area of JVM])(meat space) ----one copy shared across all objects of the same class.
+
+***👇when a static datatype is created it already has a default value.
+2.Initialized to their default values(eg --double --0.0, char -0,boolean -false, ref -null)
+
+How to refer? ----className.memberName
+eg:-  public static int idCounter;
+
+3.Static methods
+---Can be accessed without instantiation. (classname.methodName(...))
+Can't access "this" or "super" from within static method.
+***👆We cannot use this or super keyword in static method eg:Main Method
+ 
+Rules 
+---1.Can static methods access other static members directly without instances ----->>Yes;
+---2.Can static methods access other non static members directly without instances ------>>No;
+
+4.Static Initializer block
+syntax--
+static{
+    1.block gets called only at the class loading time,by JVM's Classloader.
+    2.Usages
+        --->to init all static data members
+    3.Can add functionality -which HAS to be called precisely once.
+Use Case:singleton pattern , J2EE for loading hibernate/spring..framework
+}
+
+They appear -- within class definition and can access only static members directly without instances
+A class can have multiple static init blocks(Legal BUT NOT RECOMMENDED)
+
+
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
