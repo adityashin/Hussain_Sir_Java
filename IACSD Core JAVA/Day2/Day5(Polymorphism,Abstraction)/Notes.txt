@@ -1,0 +1,63 @@
+Types : single, multilevel,Multiple inheritance(not supported : ambiguity)
+
+ctor invocation in inheritance hierarchy : refer to diag.
+super --keyword in java
+
+super keyword usages
+1.To invoke immediate super class matching ctor(eg:firstname,lastname)
+2.To access super class accessible members(eg.super.toString())
+
+
+Important Statements
+Sub class IS A super class + something more (additional data members + methods) + something modified(behaviour:method:method overriding)
+
+toString --- whose method : java.lang.Object
+public String toString() ---F.Q. classname @ hashcode
+
+What's the need of overriding it?
+To replace hashcode returning version by actual state details
+
+***************************************************************
+Polymorphism
+Polymorphism-------one functionality------multiple(changing)forms
+1.static ---compile time ----early binding ---resolved by javac
+
+Achieved via method overloading
+
+***Rules
+Can be in same class or in sub class
+same method name
+signature --different(nos of argument/type of args/both)
+return type --ignored by compiler
+
+eg ---In class Test:
+void test(int i,int j)
+void test(int i)
+void test(float a,float b)
+void test(double i,double j)
+ 
+
+ ***Static methods can be overloaded ? Yes (eg:Array.toString)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2.Dynamci (run time) Polymorphism --late binding --dynamic method disspatch --- resolved by JRE.
+
+Dynamic method dispatch -- which form of method to send for exection ---This decision can't be taken by javac ---But taken by JRE(JVM)
+Achieved via ----method overriding
+
+Method overriding ---Means of achieving run time Polymorphism
+
+No "virtual" keyword in java (i.e. all methods are implicitly virtual)
+
+All java methods can be overridden : if they are not marked as private or static of functionality
+
+Super class form of method ---overridden method
+
+sub class form ---Overrding form of the method
+
+Rules: to be followed by Overrding method in a sub class
+
+1.same method name,same signature, ret type must be  same or its sub (co-variance)
+
+
+
