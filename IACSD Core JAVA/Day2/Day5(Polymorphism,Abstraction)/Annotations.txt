@@ -1,0 +1,10 @@
+---------------------------------------------------------------
+Annotations
+
+Annotations are avaiable --metadat meant for Compiler or JRE.(Java tools)
+
+Java Annotation is a tag that represents the metatdata i.e. attached  with class, interfacem methods or fields to indicate some additional information which can be used by java compiler and JVM.
+  
+Annotation in java are used to provide additional information,so it is an alternative option for XML.
+eg:@Override, @Deprecated, @SuppressWarnings,@FunctionalInterface
+
