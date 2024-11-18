@@ -11,10 +11,16 @@ public class Person {
     // public Person(){};
 
     //can person class modify(override),inherited form of toString method? Yes
-    public String toString(String name){
-        return firstname + lastname;
+    // public String toString(String name){
+    //     return firstname + lastname;
+    // }
+
+    @Override
+    public String toString(){
+        return "Person[firstname="+firstname+" lastname = "+lastname+" ]";
     }
 
     
 
 }
+  
