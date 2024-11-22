@@ -12,7 +12,7 @@ public class testfruit {
     int counter =0;
 
     while (!exit) {
-        System.out.println("\n Choose from the following Options \n 1.Mango \n 2.Apple \n3.Orange \n4.Taste_OF_Fruit \n 100. Close");
+        System.out.println("\n Choose from the following Options \n 1.Mango \n 2.Apple \n3.Orange \n4.Taste_OF_Fruit \n 5.Display All fruits in Basket \n 100. Close");
         System.out.println("Choose your Option");
         Integer optString = sc.nextInt();
         switch (optString) {
@@ -44,7 +44,6 @@ public class testfruit {
                 }
                 break;
             case 4:
-                
                 System.out.println("Enter Fruit number");
                 int index = sc.nextInt();
                 if (index >=0 && index < counter) {
@@ -56,6 +55,14 @@ public class testfruit {
                     }else if (f instanceof Orange ) {
                         System.out.println("********************* The Taste of the Orange is "+ ((Orange)f).taste()+" ****************************");
                     }
+                }
+                break;
+            case 5:
+                for(fruit f: Basket)
+                if (f!=null) {
+                    System.out.println("*****************************************");
+                    System.out.println(f);  
+                    System.out.println("*******************************************");
                 }
                 break;
             default:
