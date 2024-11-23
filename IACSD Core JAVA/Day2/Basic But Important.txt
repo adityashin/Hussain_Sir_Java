@@ -1,0 +1,62 @@
+______________________________________________________________
+**************************************************************
+ Implicit : CLR adds keywords while compilation.
+
+ Explicit:manually added(code itself written by developer).
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+______________________________________________________________
+**************************************************************
+Compile time : Compile time error occurs because of syntax and semantic errors.
+
+Runtime time : Runtime is the period of time when a program is running Generally occurs after compile time.(after creation of javac file)
+
+*************************************************************
+______________________________________________________________
+**************************************************************
+Up Casting :- Using parent class to call objects of child classes. Creating object of child class using base class.
+e.g.: Person p = new Student.
+   Person p = new Faculty.
+
+Down Casting :- Parent class calling the Methods of child class using its own object or Reference. Executing Sub class specific functionality.
+
+**************************************************************
+______________________________________________________________
+
+In Java We cannot @Override three methods those methods are
+1.Private ---->Cannot Access outside the class;
+2.Final  ----> Same as Const;
+3.Static ----->Static methods belong to class not on objects;
+
+
+Direct and In-direct Referencing
+1.In-direct Referencing.
+-->Whenever the type of the reference is different from type of object it is called In-direct referencing.
+--->Here you are climbing `Up` the hierarchy so it is called `Up-Casting`.
+e.g.: Person p = new Student();
+      Fruit f = new Mango();
+
+
+2.Direct Referencing.
+--->Whenever the type of reference and type of object is same then we call it as direct referencing
+eg: Student s = new Student();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
