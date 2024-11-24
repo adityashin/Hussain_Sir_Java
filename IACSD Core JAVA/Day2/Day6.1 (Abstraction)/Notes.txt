@@ -1,0 +1,11 @@
+Abstraction is the property with which only the essential detial are displayed to the user .
+The internal details or the non-essential details ar not displayed to the user.
+*(Hiding complexities or hding the implementation details from end user)
+
+Eg: An ATM is considered as just money rendering machine rather than its internal complex details.
+
+Consider a real-life example of a person walking to an ATM she only knows how to withdraw/deposit money.But as the end user, she does not really need to know about how ATM connects with the underlying bank to inform about this transaction...
+
+This is what abstraction is .
+
+In Java,abstraction is achieved by interfaces and abstract classes.We can achieve
