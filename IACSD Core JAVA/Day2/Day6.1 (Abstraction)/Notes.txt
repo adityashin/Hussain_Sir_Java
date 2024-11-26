@@ -8,4 +8,27 @@ Consider a real-life example of a person walking to an ATM she only knows how to
 
 This is what abstraction is .
 
-In Java,abstraction is achieved by interfaces and abstract classes.We can achieve
+In Java,abstraction is achieved by interfaces and abstract classes.We can achieve 100% abstraction using interfaces. 
+
+When to use abstract classes and abstract methods?
+There are situation in which we will want to define a superclass that declares the structure of a given abstraction without providing a complete implementation of every method(i.e. only provide declaration)
+Sometimes we will want to create a superclass that only defines a generalization for that will be shared by all of its subclasses, leaving it to each subclass to fill in the details.
+
+abstract:keyword in Java
+abstract methods --methods only with declaration & no definition.
+Eg:In BoundedShape class, add abstract method declaratin from area computation(since it can't supply implementation details)
+public abstract double area(); <-----completely equivalent to CPP's pure virtual function
+
+4.Abstract classes can't be instantiated.But can create the reference of abstract class type of refer to concrete sub class instances.
+Eg:BoundedShape b = new BoundedShape();//javac err : Invalid RHS
+OR
+BoundedShape shape = new Circle();//no err
+sopln(shape.area());//JVM: area() will be invoked dynamically : circle's object
+
+5.Abstract classes CAN HAVE concrete (non-abstract) methods.
+
+6.Abstract classes MUST provide constructor to initialize its own private data members.(for creating concrete sub class instance)
+Eg:BoundedShape : private int x,y;
+Rectangle,Triangle 
+
+ 
