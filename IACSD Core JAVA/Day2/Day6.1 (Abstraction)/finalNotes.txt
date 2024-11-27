@@ -1,0 +1,22 @@
+final keyword in java
+
+Usages
+1.final data members(primitive types) -constant.
+Eg --public final int Data=123; 
+DATA++; //javac error
+
+2.final methods --can't be overridden.
+usage eg public final void show{...}
+This show() method CAN NOT be overridden by any of the sub classes
+eg -- Object class --wait,notify,notifyALL
+
+3.final class --can't be sub classes(or extended )-- i.e stopping inheritance hierarchy.
+eg --String , StringBuffer, StringBuilder
+eg : public class MyString extends String{...}//javac error
+
+4.final reference --references can't be re-assigned.
+eg --final Emp e = new Mgr(....);//up casting
+    e=new Worker(....)//compiler err
+
+---------------------------------------------------------------
+Special note on protected
