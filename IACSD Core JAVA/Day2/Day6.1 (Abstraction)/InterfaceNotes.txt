@@ -1,0 +1,27 @@
+Interface in java
+
+What is Interface?
+
+An Interface in java is a blueprint of a class.It has public static final data member and public an abstract metods only.
+
+The interface in java is a mechanism to achieve fully abstraction. Ther can be only abstract methods in the java interface(not method body)(true till JDK1.7).It is used to achieve full abstraction and multiple inheritance in java
+
+***Java Interface also represents IS-A relationship.
+
+It cannot be instantiated just like abstract class.
+
+
+****By default the Interface data members are "public static final";   <------cannot be change once declared
+****whenever you declare any method in interface java CLR will implicitly add "public abstract " to the method.
+
+
+Why java interfaces?    
+1.It is used to achieve full abstraction.
+2.By interface, we can support the functionality of multiple inheritance.
+3.IT can be used to achieve loose coupling.
+()
+
+The java compiler adds public and abstract keyword before the interface method and public, static and final keywords before data members.
+
+Syntax of Interface
+ 
