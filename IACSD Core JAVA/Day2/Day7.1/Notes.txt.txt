@@ -1,0 +1,26 @@
+When there is a class implementing multiple interfaces but having the duplicate method, will it cause ambiguity or not?.
+-->it will not cause ambiguity;
+-->when you are inheriting you are saying you are only inheriting abstract method declaration not definition so there are zero chances of ambiguity 
+-->A slight view of mandling concept of C++
+-->source view folder p2
+
+
+You cannot write overiding method with ({[Same name,Same Signature, DIFFERENT RETURN TYPES ]})
+-->SOURCE P3
+-->IT CAUSE AMBIGUITY PROBLEM
+
+When there are duplicate variables in Multiple Interfaces while accessing them it will cause an ambiguity PROBLEM to avoid it and access those individual variable we can use interfaces name with dot(.) operator to do the same;
+-->Source p4;
+
+An interface can inherit from multiple interfaces using extends keyword and INHERITED INTERFACE CAN BE IMPLEMENTED USING IMPLEMENTS KEYWORD WHICH HOLDS METHODS OF ALL OTHER INTERFACESS
+-->SOURCE p5
+
+THERE ARE TWO TYPES OF INTERFACES 
+                    ________|________
+                    |               |
+                MARKER          FUNCTIONAL
+
+MARKER: IT IS AN EMPTY INTERFACE WHICH DOESN'T HAVE ANY FUNCTIONALITY(METHODS).
+
+FUNCTIONAL:AN INTERFACE WHICH CONTAINS ONLY ONE ABSTRACT METHOD and CAN BE CALLED AND DECLARED AS FUNCTIONAL INTERFACE
+-->annotation-->>@functionalInterface
