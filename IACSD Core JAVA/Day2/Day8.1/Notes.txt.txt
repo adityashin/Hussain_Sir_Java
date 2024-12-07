@@ -1,0 +1,6 @@
+Protected access specifier--
+will they be accessible --in the same class,in the same pkg sub class, in the same pkg non subclass different pkg sub class
+
+
+Equals--
+checks equality 
